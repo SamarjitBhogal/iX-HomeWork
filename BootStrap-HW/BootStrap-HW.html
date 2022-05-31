@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap Site</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: skyblue">
+    <div class="text-bg-info p-3">
+      <div class="text-bg-primary p-3">
+        <header style="color: black;">
+          <h1>Welcome to my landing page</h1>
+          <h2>My name is Sam!</h2>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="BootStrap-HW.html">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="BootStrap-HW.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    >Secret</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/SamarjitBhogal"
+                    >GitHub</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section>
+      <p class="fw-bold" style="text-align: center">
+        Hi there! I am a computer science undergrad from the University of
+        British Colombia here in Canada. I really enjoy computer science,
+        especially coding. I plan on becoming a software enginner and taking my
+        skills straight into game development! I am excited to join the iX
+        network as this will be my first step into the real world of software
+        development. I am looking foward to learn and see what it takes! I have
+        never touched anything when it comes to web development but I am eager
+        to learn! Looking forward to see you all soon!
+      </p>
+    </section>
+    <section>
+      <p class="fw-bold" style="text-align: center">
+        Here is a quote from me: "Giving up on something made that time
+        worthless and time is very limited. Next time you feel like giving up
+        think of all the effort you already have put in!"
+      </p>
+    </section>
+    <section>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          rows="2"
+          placeholder="Write Here"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >How are you doing today?</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          placeholder="Write Here"
+          rows="2"
+        ></textarea>
+      </div>
+    </section>
+    <section style="display: flex; gap: 50px;">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckChecked"
+          checked
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Default checked radio
+        </label>
+      </div>
+    </section>
+    <section>
+      <h3>Which one is your favorite?</h3>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">Koala</option>
+        <option value="2">Monkey</option>
+        <option value="3">Cat</option>
+      </select>
+    </section>
+    <section>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/koala.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>From:</h5>
+              <p>
+                <a href="https://www.freepik.com/vectors/koala-bear"
+                  >Koala bear vector created by catalyststuff -
+                  www.freepik.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/monkey.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>From:</h5>
+              <p>
+                <a href="https://www.freepik.com/vectors/cute-monkey">
+                  Cute monkey vector created by catalyststuff -
+                  www.freepik.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="assets/img/cat.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>From:</h5>
+              <p>
+                <a href="https://www.freepik.com/vectors/mascot-design"
+                  >Mascot design vector created by catalyststuff -
+                  www.freepik.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
