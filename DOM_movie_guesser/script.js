@@ -18,18 +18,24 @@ const input = document.getElementById('input');
 const submit = document.getElementById('submit'); 
 const hint = document.getElementById('hint');
 const movieText = document.getElementById('movie-text');
-const card = document.getElementById('card');
+const card = document.getElementById('card'); 
 const cardElement = document.createElement('div');
-
+    
+var alert = '';
 movieText.innerHTML = movies[i].explanation;
 cardElement.classList.add('alert');
 
 submit.addEventListener('click', (event) => {
 
+    if (card.children.length > 0) {
+        cardElement.classList.remove(alert);
+    }  
+    
     if (input.value == movies[i].title) {
         cardElement.classList.add('alert-success');
         cardElement.innerHTML = "You guessed correctly the movie was " +  movies[i].title;
 
+        alert = 'alert-success'
         input.value = '';
         i++;
         movieText.innerHTML = movies[i].explanation;
@@ -37,6 +43,7 @@ submit.addEventListener('click', (event) => {
         cardElement.classList.add('alert-danger'); 
         cardElement.innerHTML = "You guessed incorrectly the movie was " +  movies[i].title;
 
+        alert = 'alert-danger'
         input.value = '';
         i++;
         movieText.innerHTML = movies[i].explanation;
@@ -45,7 +52,11 @@ submit.addEventListener('click', (event) => {
 });
 
 hint.addEventListener('click', (event) => {
+    if (card.children.length > 0) {
+        cardElement.classList.remove(alert);
+    }
     cardElement.classList.add('alert-info');
+    alert = 'alert-info';
     cardElement.innerHTML = movies[i].hint;
     card.appendChild(cardElement);
 });
