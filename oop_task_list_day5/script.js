@@ -15,8 +15,6 @@ class UserInterface {
       this.onTaskSubmit(e);
     });
 
-    console.log("ui construct");
-
     this.tasks = [];
   }
 
@@ -24,8 +22,6 @@ class UserInterface {
     e.preventDefault();
 
     const task = new Task(this.taskName.value);
-
-    console.log(task);
 
     this.tasks.push(task);
     this.renderTasks();
