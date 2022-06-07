@@ -31,7 +31,7 @@ submit.addEventListener('click', (event) => {
         cardElement.classList.remove(alert);
     }  
     
-    if (input.value == movies[i].title) {
+    if (input.value.toLowerCase == movies[i].title.toLowerCase) {
         cardElement.classList.add('alert-success');
         cardElement.innerHTML = "You guessed correctly the movie was " +  movies[i].title;
 
